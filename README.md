@@ -110,7 +110,7 @@ The JSON contains:
 
 Install Python:
 ```bash
-  apk add python3
+apk add python3
 ```
 Run:
 ```bash
@@ -120,7 +120,7 @@ Or execute the provided one-liner.
 
 Display the generated result:
 ```bash
-  cat PLEIADES_RH_IDEA_FORM.json
+cat PLEIADES_RH_IDEA_FORM.json
 ```
 ---
 
