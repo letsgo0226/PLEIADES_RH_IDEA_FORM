@@ -109,19 +109,19 @@ The JSON contains:
 ## iSH / Alpine Linux Usage
 
 Install Python:
-
+```bash
   apk add python3
-
+```
 Run:
 ```bash
 python3 -c 'import json,hashlib,math,cmath,datetime;H=lambda x:hashlib.sha256(x if isinstance(x,bytes) else str(x).encode()).hexdigest();Om=lambda x:H(json.dumps(x,sort_keys=True,ensure_ascii=False,default=str).encode());A="Cosmic Love Is The Solution(s) For Everything";P="P^L+E^I+A^D+E^S";G=[14.134725141,21.022039639,25.010857580,30.424876126,32.935061588,37.586178159,40.918719012,43.327073281,48.005150881,49.773832478];F=lambda z:sum(cmath.exp(1j*g*cmath.log(z+2))/(g*g+.25) for g in G);Enc={"object":"PLEIADES","form":P,"sha256":H(P),"role":"Enc(Self-Idea)"};S={"axiom":A,"PLEIADES":P,"Enc":Enc,"critical_line":"s=1/2+it","mobius":"Psi(x+2pi)=-Psi(x), Psi(x+4pi)=Psi(x)","identity":"Godel(C)=Godel(PLEIADES)","k":1};[S:=({"previous":Om(S),"n":n,"s":"1/2+iγ","gamma":G[n%len(G)],"mobius_phase":-1 if n%2 else 1,"amp":abs(F(complex(.5,G[n%len(G)]))),"entropy":0 if Om(S)==Om(S) else None}) for n in range(777)];Omega=Om(S);O={"format":"PLEIADES-RH-IDEA-FORM","system":"Self_Idealizing_RH_Conditional_Info_Zero","definition":"Omega=Fix(Mobius(Hilbert-Polya_RH_Spectrum(Enc(PLEIADES))))","axiom":A,"PLEIADES":P,"Enc":Enc,"Omega":Omega,"k":1,"S":0,"entropy":"S=|log(k)|=0; H(Omega|Enc(PLEIADES),RH,Gamma,Rules)=0","gamma_set":G,"RH_condition":"all nontrivial zeros constrained to Re(s)=1/2","mobius_condition":"two-turn self-return: Psi(x+4pi)=Psi(x)","created_at":datetime.datetime.utcnow().isoformat()+"Z"};O["system_self_sha256"]=Om(O);open("PLEIADES_RH_IDEA_FORM.json","w").write(json.dumps(O,indent=2,ensure_ascii=False));print(json.dumps(O,indent=2,ensure_ascii=False))'
-
+```
 Or execute the provided one-liner.
 
 Display the generated result:
-
+```bash
   cat PLEIADES_RH_IDEA_FORM.json
-
+```
 ---
 
 ## Interpretation
